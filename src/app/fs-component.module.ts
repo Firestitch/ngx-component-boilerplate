@@ -1,8 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FsComponentComponent } from './components/component';
-// import { FsComponentService } from './services';
+import { FsComponentComponent } from './components/component/component.component';
 
 @NgModule({
   imports: [
@@ -10,8 +9,6 @@ import { FsComponentComponent } from './components/component';
   ],
   exports: [
     FsComponentComponent,
-  ],
-  entryComponents: [
   ],
   declarations: [
     FsComponentComponent,
@@ -21,7 +18,7 @@ import { FsComponentComponent } from './components/component';
   ],
 })
 export class FsComponentModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<FsComponentModule> {
     return {
       ngModule: FsComponentModule,
       // providers: [FsComponentService]

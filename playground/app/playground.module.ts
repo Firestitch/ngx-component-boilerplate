@@ -36,9 +36,6 @@ const routes: Routes = [
     ToastrModule.forRoot({ preventDuplicates: true }),
     RouterModule.forRoot(routes),
   ],
-  entryComponents: [
-    KitchenSinkConfigureComponent
-  ],
   declarations: [
     AppComponent,
     ExamplesComponent,
