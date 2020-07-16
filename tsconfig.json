@@ -1,13 +1,26 @@
+/*
+  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
+  It is not intended to be used to perform a compilation.
+
+  To learn more about this file see: https://angular.io/config/solution-tsconfig.
+*/
 {
-  "extends": "./tools/config/tsconfig.cli.json",
-  "compilerOptions": {
-    "paths": {
-      "@firestitch/package": [
-        "src/public_api.ts"
-      ],
-      "@env": [
-        "playground/environments/environment.ts"
-      ]
+  "files": [],
+  "references": [
+    {
+      "path": "./playground/tsconfig.app.json"
+    },
+    {
+      "path": "./playground/tsconfig.spec.json"
+    },
+    {
+      "path": "./e2e/tsconfig.e2e.json"
+    },
+    {
+      "path": "./src/tsconfig.lib.json"
+    },
+    {
+      "path": "./src/tsconfig.spec.json"
     }
-  }
+  ]
 }
